@@ -1,0 +1,29 @@
+OLS Regression for MVHR (ASX Daily Log Return on AUD/USD Daily Log Return):
+                             OLS Regression Results                             
+================================================================================
+Dep. Variable:     ASX_Daily_Log_Return   R-squared:                       0.061
+Model:                              OLS   Adj. R-squared:                  0.060
+Method:                   Least Squares   F-statistic:                     330.0
+Date:                  Sun, 25 May 2025   Prob (F-statistic):           1.64e-71
+Time:                          01:47:43   Log-Likelihood:                 16214.
+No. Observations:                  5119   AIC:                        -3.242e+04
+Df Residuals:                      5117   BIC:                        -3.241e+04
+Df Model:                             1                                         
+Covariance Type:              nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                       0.0001      0.000      1.010      0.313      -0.000       0.000
+AUDUSD_Daily_Log_Return     0.3295      0.018     18.166      0.000       0.294       0.365
+==============================================================================
+Omnibus:                     1163.039   Durbin-Watson:                   2.249
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            14889.534
+Skew:                          -0.719   Prob(JB):                         0.00
+Kurtosis:                      11.230   Cond. No.                         127.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Minimum Variance Hedge Ratio (beta): 0.3295
+Hedge Effectiveness (R-squared): 0.0606
