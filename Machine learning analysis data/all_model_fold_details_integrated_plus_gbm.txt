@@ -1,0 +1,124 @@
+
+--- PREDICTING ASX RETURNS (ASX_Target_NextDay_LogReturn) --- (X shape: (5119, 224))
+
+===== Processing for Target: ASX_Target_NextDay_LogReturn using Model: Ridge =====
+       Fold 1 - RMSE: 0.0147, MAE: 0.0106, R2: -0.0355, Best Params: {'model__alpha': 100.0, 'selector__k': 50}  {'audusd_Open': -0.001067140684359295, 'asx_PSARr_0.02_0.2': -0.0009428392126762165, 'asx_Close_MACDh_8_21_9': -0.0007549883414312393, 'audusd_HLC_STOCHk_20_5_5': 0.0007472453194072282, 'audusd_TSIs_13_25_13': -0.0006642077514620549}
+
+       Fold 2 - RMSE: 0.0087, MAE: 0.0066, R2: -0.1048, Best Params: {'model__alpha': 100.0, 'selector__k': 50}  {'audusd_Open': -0.002485933434531769, 'audusd_Close_ROC_5': 0.001799931645958036, 'audusd_HLC_WILLR_14': 0.0012417358178839078, 'audusd_Close_RSI_7': 0.0007759003906799896, 'audusd_Close_CMO_14': -0.0007719931967504576}
+
+       Fold 3 - RMSE: 0.0085, MAE: 0.0063, R2: -0.0095, Best Params: {'model__alpha': 100.0, 'selector__k': 150}  {'asx_ICS_26': 0.004076017274441679, 'audusd_Open': -0.0020740949772732865, 'audusd_STOCHd_14_3_3': -0.0017847556853462022, 'audusd_HLC_WILLR_14': 0.0017545430420991557, 'audusd_Close_ROC_5': 0.0017091072719432367}
+
+       Fold 4 - RMSE: 0.0120, MAE: 0.0077, R2: -0.0104, Best Params: {'model__alpha': 100.0, 'selector__k': 50}  {'audusd_STOCHd_14_3_3': -0.00193083692626954, 'audusd_HLC_WILLR_14': 0.0017792172444051969, 'audusd_Close_ROC_5': 0.0014877069599004064, 'audusd_HLC_CCI_10': -0.000899615096990042, 'asx_Close_ROC_5': -0.0007606073954605116}
+
+       Fold 5 - RMSE: 0.0084, MAE: 0.0063, R2: -0.0333, Best Params: {'model__alpha': 100.0, 'selector__k': 100}  {'asx_ICS_26': 0.00493234308838699, 'audusd_HLC_CCI_20': -0.001951872767982025, 'audusd_BBP_20_2.0': 0.001544683495673655, 'audusd_Close_ROC_5': 0.0013682965987259525, 'asx_Close_ROC_5': -0.0012661253991153316}
+
+     Average Results for Ridge predicting ASX_Target_NextDay_LogReturn: RMSE=0.0105, MAE=0.0075, R2=-0.0387
+
+===== Processing for Target: ASX_Target_NextDay_LogReturn using Model: SVR_linear =====
+       Fold 1 - RMSE: 0.0186, MAE: 0.0150, R2: -0.6513, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_High': 0.0, 'asx_Low': 0.0, 'asx_Open': 0.0, 'asx_Close_EMA_5': 0.0, 'asx_Close_WMA_5': 0.0}
+
+       Fold 2 - RMSE: 0.0179, MAE: 0.0162, R2: -3.6634, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_Close_SMA_120': 0.0, 'asx_Close_SMA_150': 0.0, 'asx_Close_EMA_150': 0.0, 'asx_Close_SMA_200': 0.0, 'asx_Close_EMA_200': 0.0}
+
+       Fold 3 - RMSE: 0.0176, MAE: 0.0160, R2: -3.3622, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_High': 0.0, 'asx_Low': 0.0, 'asx_Open': 0.0, 'asx_Close_SMA_5': 0.0, 'asx_Close_EMA_5': 0.0}
+
+       Fold 4 - RMSE: 0.0196, MAE: 0.0172, R2: -1.6984, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_High': 0.0, 'asx_Low': 0.0, 'asx_Open': 0.0, 'asx_Close_SMA_5': 0.0, 'asx_Close_EMA_5': 0.0}
+
+       Fold 5 - RMSE: 0.0191, MAE: 0.0175, R2: -4.2851, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_Low': 0.0, 'asx_Close_EMA_5': 0.0, 'asx_Close_HMA_5': 0.0, 'asx_Close_SMA_15': 0.0, 'asx_Close_EMA_15': 0.0}
+
+     Average Results for SVR_linear predicting ASX_Target_NextDay_LogReturn: RMSE=0.0186, MAE=0.0164, R2=-2.7321
+
+===== Processing for Target: ASX_Target_NextDay_LogReturn using Model: SVR_rbf =====
+       Fold 1 - RMSE: 0.0186, MAE: 0.0150, R2: -0.6513, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 2 - RMSE: 0.0179, MAE: 0.0162, R2: -3.6634, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 3 - RMSE: 0.0176, MAE: 0.0160, R2: -3.3622, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 4 - RMSE: 0.0196, MAE: 0.0172, R2: -1.6984, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 5 - RMSE: 0.0191, MAE: 0.0175, R2: -4.2851, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+     Average Results for SVR_rbf predicting ASX_Target_NextDay_LogReturn: RMSE=0.0186, MAE=0.0164, R2=-2.7321
+
+===== Processing for Target: ASX_Target_NextDay_LogReturn using Model: RandomForestRegressor =====
+       Fold 1 - RMSE: 0.0153, MAE: 0.0111, R2: -0.1186, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 10, 'model__n_estimators': 100, 'selector__k': 100}  {'asx_MACDh_12_26_9': 0.3070937320422029, 'audusd_Open': 0.07488887292741336, 'asx_Close_MACDh_8_21_9': 0.06464253670936607, 'asx_Close_BBU_50_2.5': 0.05282488218815834, 'audusd_VTXP_14': 0.046809997492184625}
+
+       Fold 2 - RMSE: 0.0083, MAE: 0.0062, R2: -0.0110, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 50}  {'audusd_Close_ROC_5': 0.1739637400009737, 'audusd_Close_ROC_60': 0.14028914077364127, 'audusd_Close_ROC_120': 0.07616858826680621, 'asx_HLC_ATR_14': 0.06668660238087566, 'asx_Close_SMA_240': 0.05488271066602234}
+
+       Fold 3 - RMSE: 0.0084, MAE: 0.0062, R2: 0.0012, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 150}  {'asx_MACDh_12_26_9': 0.1352158206762511, 'audusd_Close_ROC_60': 0.10997796782014094, 'audusd_Close_ROC_10': 0.07015954025487132, 'asx_Close_ROC_20': 0.062032491414783515, 'audusd_Close_ROC_5': 0.046225000846371704}
+
+       Fold 4 - RMSE: 0.0135, MAE: 0.0081, R2: -0.2765, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 10, 'model__n_estimators': 200, 'selector__k': 150}  {'asx_Close_MACD_8_21_9': 0.18374224290787847, 'audusd_Close_ROC_60': 0.12239608305306367, 'asx_MACDh_12_26_9': 0.06334189678951652, 'audusd_Close_ROC_5': 0.05715496429239131, 'audusd_Close_ROC_10': 0.052613264855868085}
+
+       Fold 5 - RMSE: 0.0084, MAE: 0.0063, R2: -0.0267, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 5, 'model__n_estimators': 100, 'selector__k': 150}  {'asx_Close_ROC_5': 0.09860306872541927, 'asx_Close_ROC_10': 0.08954244495485243, 'asx_Close_ROC_20': 0.07224107517180132, 'audusd_Close_ROC_5': 0.07094242102986596, 'audusd_Close_ROC_10': 0.053367914393863264}
+
+     Average Results for RandomForestRegressor predicting ASX_Target_NextDay_LogReturn: RMSE=0.0108, MAE=0.0076, R2=-0.0863
+
+===== Processing for Target: ASX_Target_NextDay_LogReturn using Model: GradientBoostingRegressor =====
+       Fold 1 - RMSE: 0.0163, MAE: 0.0120, R2: -0.2785, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 4, 'model__n_estimators': 150, 'selector__k': 100}  {'asx_MACDh_12_26_9': 0.19678106172065776, 'asx_Close_MACDh_8_21_9': 0.08954764514835052, 'audusd_Open': 0.07056589952654985, 'audusd_VTXP_14': 0.0689848746479629, 'audusd_ICS_26': 0.05851744956498025}
+
+       Fold 2 - RMSE: 0.0087, MAE: 0.0066, R2: -0.1137, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 100}  {'asx_MACDh_12_26_9': 0.12076942885009039, 'audusd_Close_ROC_60': 0.08527753957814739, 'asx_Close_MACDh_8_21_9': 0.07792917530988183, 'audusd_Close_ROC_120': 0.054906007199265014, 'audusd_Close_ROC_5': 0.05021608100529887}
+
+       Fold 3 - RMSE: 0.0084, MAE: 0.0062, R2: -0.0025, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 100}  {'asx_MACDh_12_26_9': 0.12995933828466974, 'audusd_Close_ROC_60': 0.09758683724892707, 'asx_Close_MACDh_8_21_9': 0.08314701806600894, 'audusd_Close_ROC_5': 0.05749880139144976, 'asx_ICS_26': 0.05262534516271007}
+
+       Fold 4 - RMSE: 0.0158, MAE: 0.0117, R2: -0.7386, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 150}  {'audusd_Close_ROC_60': 0.13427124805362298, 'asx_Close_MACD_8_21_9': 0.09838122799538425, 'audusd_Close_ROC_5': 0.0663131320273716, 'audusd_HLC_WILLR_14': 0.051232947549451305, 'audusd_Close_ROC_120': 0.037146455793290414}
+
+       Fold 5 - RMSE: 0.0088, MAE: 0.0066, R2: -0.1153, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 150}  {'asx_Close_ROC_5': 0.09844706650636108, 'audusd_Close_ROC_120': 0.062121617753813224, 'asx_Close_ROC_60': 0.048626404684579405, 'audusd_Close_ROC_10': 0.04451891240665215, 'asx_HLC_ATR_7': 0.043698879816782395}
+
+     Average Results for GradientBoostingRegressor predicting ASX_Target_NextDay_LogReturn: RMSE=0.0116, MAE=0.0086, R2=-0.2497
+
+--- PREDICTING AUDUSD RETURNS (AUDUSD_Target_NextDay_LogReturn) --- (X shape: (5119, 224))
+
+===== Processing for Target: AUDUSD_Target_NextDay_LogReturn using Model: Ridge =====
+       Fold 1 - RMSE: 0.0129, MAE: 0.0086, R2: -0.0413, Best Params: {'model__alpha': 100.0, 'selector__k': 100}  {'asx_HLC_WILLR_28': 0.0007540518181011549, 'asx_PPO_12_26_9': 0.0007139811835326928, 'audusd_Close_ROC_60': -0.0006314484848011656, 'asx_PPOs_12_26_9': 0.0006018736421153648, 'audusd_HLC_CCI_50': 0.000553544565532924}
+
+       Fold 2 - RMSE: 0.0064, MAE: 0.0048, R2: 0.0164, Best Params: {'model__alpha': 100.0, 'selector__k': 100}  {'asx_Close_BBB_50_2.5': 0.001267798312854897, 'audusd_Close_ROC_5': -0.001171853377324815, 'asx_HLC_WILLR_28': 0.000970077908060325, 'asx_HLC_WILLR_14': 0.0009005719993196678, 'asx_HLC_ATR_7': -0.0008953465238790878}
+
+       Fold 3 - RMSE: 0.0062, MAE: 0.0049, R2: 0.0202, Best Params: {'model__alpha': 100.0, 'selector__k': 50}  {'audusd_Close_HMA_5': -0.0008036090937464612, 'audusd_HLC_CCI_50': 0.00048129124355360075, 'audusd_Open': -0.00041965247432310197, 'audusd_HLC_CCI_10': 0.0004164947581907316, 'audusd_Close_HMA_150': 0.0004010666551995839}
+
+       Fold 4 - RMSE: 0.0055, MAE: 0.0040, R2: 0.2217, Best Params: {'model__alpha': 100.0, 'selector__k': 150}  {'audusd_HLC_WILLR_14': -0.003933445201108093, 'audusd_HLC_CCI_10': 0.002759571995589834, 'audusd_HLC_CCI_20': 0.0015981293278860824, 'audusd_Close_ROC_5': -0.0012254579510095262, 'audusd_High': 0.0010873033797494042}
+
+       Fold 5 - RMSE: 0.0063, MAE: 0.0047, R2: 0.1976, Best Params: {'model__alpha': 100.0, 'selector__k': 50}  {'audusd_HLC_WILLR_14': -0.0044475161367760665, 'audusd_HLC_CCI_10': 0.0024095259776294523, 'audusd_HLC_CCI_20': 0.0016961118454200549, 'asx_HLC_WILLR_14': 0.0006434912715653249, 'audusd_Close_HMA_200': 0.0006135111816479115}
+
+     Average Results for Ridge predicting AUDUSD_Target_NextDay_LogReturn: RMSE=0.0075, MAE=0.0054, R2=0.0829
+
+===== Processing for Target: AUDUSD_Target_NextDay_LogReturn using Model: SVR_linear =====
+       Fold 1 - RMSE: 0.0149, MAE: 0.0114, R2: -0.3905, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_High': 0.0, 'asx_Close_HMA_5': 0.0, 'asx_Close_SMA_240': 0.0, 'asx_MACDh_12_26_9': 0.0, 'asx_BBB_20_2.0': 0.0}
+
+       Fold 2 - RMSE: 0.0091, MAE: 0.0074, R2: -1.0095, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_BBP_20_2.0': 0.0, 'asx_Close_BBP_50_2.5': 0.0, 'asx_Close_RSI_7': 0.0, 'asx_Close_RSI_14': 0.0, 'asx_Close_RSI_21': 0.0}
+
+       Fold 3 - RMSE: 0.0089, MAE: 0.0072, R2: -0.9821, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_BBP_20_2.0': 0.0, 'asx_Close_BBL_50_2.5': 0.0, 'asx_Close_BBB_50_2.5': 0.0, 'asx_HLC_WILLR_14': 0.0, 'asx_HLC_WILLR_28': 0.0}
+
+       Fold 4 - RMSE: 0.0088, MAE: 0.0072, R2: -1.0051, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_BBP_20_2.0': 0.0, 'asx_Close_BBL_50_2.5': 0.0, 'asx_Close_BBB_50_2.5': 0.0, 'asx_HLC_WILLR_14': 0.0, 'asx_HLC_WILLR_28': 0.0}
+
+       Fold 5 - RMSE: 0.0096, MAE: 0.0077, R2: -0.8271, Best Params: {'model__C': 0.1, 'selector__k': 50}  {'asx_MACDh_12_26_9': 0.0, 'asx_Close_MACDh_8_21_9': 0.0, 'asx_BBP_20_2.0': 0.0, 'asx_Close_BBL_50_2.5': 0.0, 'asx_Close_BBB_50_2.5': 0.0}
+
+     Average Results for SVR_linear predicting AUDUSD_Target_NextDay_LogReturn: RMSE=0.0103, MAE=0.0082, R2=-0.8429
+
+===== Processing for Target: AUDUSD_Target_NextDay_LogReturn using Model: SVR_rbf =====
+       Fold 1 - RMSE: 0.0149, MAE: 0.0114, R2: -0.3905, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}  
+       Fold 2 - RMSE: 0.0091, MAE: 0.0074, R2: -1.0095, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 3 - RMSE: 0.0089, MAE: 0.0072, R2: -0.9821, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 4 - RMSE: 0.0088, MAE: 0.0072, R2: -1.0051, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+       Fold 5 - RMSE: 0.0096, MAE: 0.0077, R2: -0.8271, Best Params: {'model__C': 1, 'model__gamma': 0.001, 'selector__k': 50}
+     Average Results for SVR_rbf predicting AUDUSD_Target_NextDay_LogReturn: RMSE=0.0103, MAE=0.0082, R2=-0.8429
+
+===== Processing for Target: AUDUSD_Target_NextDay_LogReturn using Model: RandomForestRegressor =====
+       Fold 1 - RMSE: 0.0137, MAE: 0.0093, R2: -0.1810, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 10, 'model__n_estimators': 200, 'selector__k': 50}  {'audusd_Close_ROC_60': 0.23484945940441432, 'audusd_TSIs_13_25_13': 0.06875486511462399, 'asx_Close_SMA_240': 0.03641224223901, 'asx_PPOh_12_26_9': 0.035681266477930275, 'asx_Close_COPC': 0.03539474262865655}
+
+       Fold 2 - RMSE: 0.0064, MAE: 0.0048, R2: -0.0030, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 2, 'model__n_estimators': 200, 'selector__k': 150}  {'audusd_MACD_12_26_9': 0.21411152459465974, 'audusd_Close_ROC_5': 0.10394562211218362, 'asx_HLC_ATR_14': 0.057985397124888295, 'audusd_Close_ROC_120': 0.04905002983231682, 'asx_HLC_ATR_7': 0.046665116101133934}
+
+       Fold 3 - RMSE: 0.0063, MAE: 0.0049, R2: 0.0011, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 10, 'model__n_estimators': 100, 'selector__k': 100}  {'audusd_Close_ROC_5': 0.3534765834574485, 'audusd_ICS_26': 0.17166532535123766, 'audusd_Close_HMA_5': 0.04164592249769335, 'audusd_Close_TEMA_10': 0.030853922405280752, 'audusd_High': 0.023588051610778527}
+
+       Fold 4 - RMSE: 0.0075, MAE: 0.0058, R2: -0.4683, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 2, 'model__n_estimators': 200, 'selector__k': 150}  {'audusd_Close_ROC_5': 0.26513111171940396, 'audusd_ICS_26': 0.09396461578801465, 'asx_HLC_ATR_7': 0.09250141466952919, 'audusd_Close_ROC_10': 0.0702604205873115, 'audusd_Close_TEMA_10': 0.03994272325128804}
+
+       Fold 5 - RMSE: 0.0071, MAE: 0.0053, R2: -0.0194, Best Params: {'model__max_depth': 5, 'model__min_samples_split': 5, 'model__n_estimators': 100, 'selector__k': 100}  {'asx_Close_ROC_5': 0.16814082712448872, 'asx_PPOh_12_26_9': 0.08888783373251054, 'asx_Close_BBP_50_2.5': 0.06901168713113529, 'audusd_Close_HMA_20': 0.05005155852528604, 'audusd_HLC_CCI_10': 0.046477217013526015}
+
+     Average Results for RandomForestRegressor predicting AUDUSD_Target_NextDay_LogReturn: RMSE=0.0082, MAE=0.0060, R2=-0.1341
+
+===== Processing for Target: AUDUSD_Target_NextDay_LogReturn using Model: GradientBoostingRegressor =====
+       Fold 1 - RMSE: 0.0143, MAE: 0.0099, R2: -0.2798, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 50}  {'audusd_Close_ROC_60': 0.17411572016551374, 'audusd_TSIs_13_25_13': 0.06218576916698206, 'asx_PPOh_12_26_9': 0.05144791563284042, 'asx_High': 0.036395251633142944, 'audusd_Close_MACDh_8_21_9': 0.03589381898376537}
+
+       Fold 2 - RMSE: 0.0072, MAE: 0.0054, R2: -0.2654, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 50}  {'audusd_Close_ROC_5': 0.4006324886556027, 'audusd_Close_HMA_5': 0.09467220882281317, 'asx_HLC_ATR_7': 0.06361772967236598, 'asx_HLC_CCI_50': 0.03060307622195233, 'asx_VTXP_14': 0.02913786051118311}
+
+       Fold 3 - RMSE: 0.0068, MAE: 0.0051, R2: -0.1561, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 50}  {'audusd_Close_HMA_5': 0.18456521768760414, 'asx_Close_BBB_50_2.5': 0.06460883162999266, 'audusd_HLC_CCI_50': 0.06275985974517938, 'audusd_Close_SMA_150': 0.061731809846928415, 'audusd_Open': 0.06123814890340859}
+
+       Fold 4 - RMSE: 0.0092, MAE: 0.0070, R2: -1.1947, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 2, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 150}  {'audusd_Close_ROC_5': 0.23763074421659333, 'audusd_ICS_26': 0.12231399649802828, 'audusd_HLC_WILLR_14': 0.09057506201415857, 'audusd_Close_TEMA_10': 0.05217202912748708, 'audusd_HLC_CCI_10': 0.044450990379321376}
+
+       Fold 5 - RMSE: 0.0068, MAE: 0.0051, R2: 0.0849, Best Params: {'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2, 'model__n_estimators': 100, 'selector__k': 50}  {'audusd_HLC_CCI_10': 0.1555155525954302, 'audusd_HLC_WILLR_14': 0.1530693701317756, 'asx_Close_ROC_5': 0.12753494064564233, 'audusd_Close_HMA_5': 0.07756801637249491, 'asx_PPOh_12_26_9': 0.06026827583074473}
+
+     Average Results for GradientBoostingRegressor predicting AUDUSD_Target_NextDay_LogReturn: RMSE=0.0089, MAE=0.0065, R2=-0.3622
